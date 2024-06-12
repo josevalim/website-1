@@ -16,6 +16,7 @@ defmodule Erlef.StipendMail do
     email =
       new()
       |> to({"eef-stipends", "eef-stipends@googlegroups.com"})
+      |> bcc({"eef-stipends",  "stipends@erlef.org"})
       |> from({"EEF Stipend Submissions", "notifications@erlef.org"})
       |> subject("EEF Stipend Proposal Submission #{subject_suffix}")
 
